@@ -1,4 +1,4 @@
-<script setup>
+<script lang="ts" setup>
 import { PermissionDashboard } from "@@/types/permission"
 
 definePageMeta({
@@ -6,8 +6,6 @@ definePageMeta({
     permissions : [PermissionDashboard.show]
 })
 </script>
-
-
 
 <template>
     <div>

@@ -15,6 +15,7 @@ export default defineNuxtConfig({
         config.plugins.push(vuetify({ autoImport: true }))
       })
     },
+    '@pinia/nuxt',
   ],
   vite: {
     vue: {
@@ -22,5 +23,10 @@ export default defineNuxtConfig({
         transformAssetUrls,
       },
     },
+  },
+  runtimeConfig: {
+    public: {
+      baseUrl: process.env.API_BASE_URL
+    }
   },
 })

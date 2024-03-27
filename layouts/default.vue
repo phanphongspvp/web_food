@@ -1,0 +1,11 @@
+<template>
+    <v-card>
+        <v-layout>
+            <v-main>
+                <Layout-sidebar></Layout-sidebar>
+                <layout-navbar></layout-navbar>
+                <slot></slot>
+            </v-main>
+        </v-layout>
+    </v-card>
+</template>
